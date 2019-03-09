@@ -190,13 +190,13 @@ header a span{
 .hero{
     position: relative;
     width: 100%;
-    background-image: url("./img/IMG_20180805_144707.jpg");
+    background-image: url("./img/Sight_2018_08_05_170643_241.jpg");
     height: 50vh;
     background-size: 140%;
     /* background-position: 40% 50%; */
     background-position: 70% 10%;
     background-repeat: no-repeat;
-    background-color: red;
+    /* background-color: red; */
 }
 .overlay{
     width: 100%;
