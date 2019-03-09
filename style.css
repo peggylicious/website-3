@@ -139,14 +139,62 @@ header a span{
     /* background-color: yellow; */
     padding: 10px 30px;
 }
+
+.container .projects p{
+    /* font-family: georgia; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 28.8px;
+    text-align: center;
+    padding: 20px 0;
+    background-color: red;
+    position: relative;
+}
+.container .projects p:after{
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 5px;
+    bottom: 0;
+    background-color: #000;
+    left: 50%;
+    margin-left: -30px;
+}
+.untilsunday, .frontloops, .my-pic{
+    margin-top: 40px;
+    /* box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.5); */
+}
+.projects a{
+    display: block;
+    /* background-color: #0f0; */
+    height: 300px;
+    width: 300px;
+    box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.5);
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.untilsunday a{
+    background-image: url("./img/projects/untilsunday.PNG");
+    background-size: 100%;
+}
+.frontloops a{
+    background-image: url("./img/projects/frontloops.png");
+    background-size: 80%;
+    background-position: center 0;
+}
+.my-pic a{
+    background-image: url("./img/Sight_2018_08_05_170643_241.jpg");
+    background-size: 80%;
+    background-position: center center;
+}
 /* Hero */
 .hero{
     position: relative;
     width: 100%;
-    background-image: url("./img/naomi_who.jpg");
+    background-image: url("./img/IMG_20180805_144707.jpg");
     height: 50vh;
-    background-size: cover;
-    background-position: 40% 50%;
+    background-size: 140%;
+    /* background-position: 40% 50%; */
+    background-position: 70% 10%;
     background-repeat: no-repeat;
     background-color: red;
 }
@@ -156,7 +204,7 @@ header a span{
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(19, 28, 45, 0.85);
+    /* background-color: rgba(19, 28, 45, 0.85); */
 }
 .overlay p{
     color: #fff;
