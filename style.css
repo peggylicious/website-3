@@ -1,0 +1,163 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+input[type="checkbox"]{
+    position: absolute;
+    z-index: -20;
+    display: none;
+}
+header{
+    height: 80px;
+    /* background-color: blue; */
+    /* overflow: hidden; */
+    position: relative;
+}
+header nav{
+    background-color: #fff;
+    /* box-shadow: 2px 2px 1px 6px rgba(0, 0, 0, .2); */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 20;
+    width: 100%;
+    height: 0vh;
+    overflow: hidden;
+    /* display: none; */
+    transition: height .3s;
+}
+header nav .ham label span{
+    background-color: transparent;
+}
+ header nav .ham label span:before{
+    top: 0;
+    transform: rotate(45deg);
+}
+header nav .ham label span:after{
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+input#dropdown:checked ~ header nav{
+    height: 50vh;
+    display: block;
+    border-top: 4px solid black;
+}
+input#dropdown:checked ~ header > .ham{
+    display: none;
+}
+nav > div{
+    display: block;
+    width: 100%;
+    /* background-color: yellow; */
+    overflow: hidden;
+}
+nav .ham{
+    float: right;
+    height: 80px;
+    width: 80px;
+    /* background-color: yellow; */
+}
+header ul{
+    /* background-color: green; */
+    display: block;
+    list-style-type: none;
+}
+header ul li{
+    margin-bottom: 5px;
+}
+header ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 8px 12px;
+    color: #000;
+    /* background-color: red; */
+}
+header > a{
+    font-size: 18px;
+    float: left;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* background-color: red; */
+    text-decoration: none;
+    color: #000;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+header a span{
+    display: block;
+    width: 130px;
+    text-align: right;
+}
+
+/* Hamburger */
+
+.ham{
+    /* display: block; */
+    float: right;
+    /* background-color: red; */
+    height: inherit;
+    width: 80px;
+}
+.ham label{
+    display: block;
+    height: inherit;
+    font-size: 0;
+    /* background-color: green; */
+    position: relative;
+}
+.ham label span{
+    display: inline-block;
+    background-color: #000;
+    height: 2px;
+    width: 20px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-top: -1px;
+    margin-left: -10px;
+}
+.ham label span:before,
+.ham label span:after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    background-color: #000;
+}
+.ham label span:before{
+    top: -8px;
+}
+.ham label span:after{
+    top: 8px;
+}
+/* Container */
+.container{
+    /* background-color: yellow; */
+    padding: 10px 30px;
+}
+/* Hero */
+.hero{
+    position: relative;
+    width: 100%;
+    background-image: url("./img/naomi_who.jpg");
+    height: 50vh;
+    background-size: cover;
+    background-position: 40% 50%;
+    background-repeat: no-repeat;
+    background-color: red;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(19, 28, 45, 0.85);
+}
+.overlay p{
+    color: #fff;
+}
